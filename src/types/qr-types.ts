@@ -54,10 +54,25 @@ export const QR_CATEGORIES: QRCategory[] = [
     color: 'bg-green-500',
     fields: [
       { name: 'type', type: 'select', label: 'Contact Type', options: ['vCard', 'Phone', 'SMS', 'Email', 'WhatsApp'], required: true },
-      { name: 'name', type: 'text', label: 'Name', placeholder: 'John Doe' },
-      { name: 'phone', type: 'tel', label: 'Phone Number', placeholder: '+1234567890' },
-      { name: 'email', type: 'email', label: 'Email', placeholder: 'john@example.com' },
-      { name: 'message', type: 'textarea', label: 'Message (for SMS/WhatsApp)', placeholder: 'Hello!' }
+      { name: 'firstName', type: 'text', label: 'First Name', placeholder: 'John', required: true },
+      { name: 'middleName', type: 'text', label: 'Middle Name', placeholder: 'Michael' },
+      { name: 'lastName', type: 'text', label: 'Last Name', placeholder: 'Doe' },
+      { name: 'mobileNumber1', type: 'tel', label: 'Mobile Number 1', placeholder: '+1234567890', required: true },
+      { name: 'mobileLabel1', type: 'select', label: 'Mobile 1 Label', options: ['Personal', 'WhatsApp', 'Official', 'Work', 'Home'], required: true },
+      { name: 'mobileNumber2', type: 'tel', label: 'Mobile Number 2 (Optional)', placeholder: '+1234567890' },
+      { name: 'mobileLabel2', type: 'select', label: 'Mobile 2 Label', options: ['Personal', 'WhatsApp', 'Official', 'Work', 'Home'] },
+      { name: 'mobileNumber3', type: 'tel', label: 'Mobile Number 3 (Optional)', placeholder: '+1234567890' },
+      { name: 'mobileLabel3', type: 'select', label: 'Mobile 3 Label', options: ['Personal', 'WhatsApp', 'Official', 'Work', 'Home'] },
+      { name: 'homeAddress', type: 'textarea', label: 'Home Address', placeholder: '123 Home Street, City, State, ZIP' },
+      { name: 'officeAddress', type: 'textarea', label: 'Office Address', placeholder: '456 Office Building, City, State, ZIP' },
+      { name: 'email', type: 'email', label: 'Email Address', placeholder: 'john@example.com' },
+      { name: 'linkedinLink', type: 'url', label: 'LinkedIn Profile', placeholder: 'https://linkedin.com/in/johndoe' },
+      { name: 'instagramLink', type: 'url', label: 'Instagram Profile', placeholder: 'https://instagram.com/johndoe' },
+      { name: 'xAccount', type: 'url', label: 'X (Twitter) Profile', placeholder: 'https://x.com/johndoe' },
+      { name: 'facebook', type: 'url', label: 'Facebook Profile', placeholder: 'https://facebook.com/johndoe' },
+      { name: 'website', type: 'url', label: 'Website', placeholder: 'https://johndoe.com' },
+      { name: 'summary', type: 'textarea', label: 'About/Summary', placeholder: 'Brief description about yourself or your profession...' },
+      { name: 'message', type: 'textarea', label: 'Message (for SMS/WhatsApp)', placeholder: 'Hello! Nice to connect with you.' }
     ]
   },
   {
